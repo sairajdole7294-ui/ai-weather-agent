@@ -1,11 +1,10 @@
 import requests
 
-API_KEY = "7d4465fb849a5c205ff25d6af11ddd81"
+API_KEY = "YOUR_API_KEY"
 
 city = input("Enter city name: ")
 
-url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={"7d4465fb849a5c205ff25d6af11ddd81"
-}&units=metric"
+url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={"API_KEY"}&units=metric"
 
 response = requests.get(url)
 data = response.json()
